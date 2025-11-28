@@ -80,7 +80,7 @@ app.post("/api/extract", async (req, res) => {
     const html = pageResp.data;
     // Extract text
     let extracted = extractText(html);
-    // console.log(extracted, "-------html------------");
+    // console.log(extracted, "-------html------------1");
 
     // Truncate to a safe length for prompt/context
     const maxLen = parseInt(process.env.MAX_EXTRACT_CHARS || "25000", 10);
